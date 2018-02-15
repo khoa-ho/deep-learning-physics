@@ -1,1 +1,1 @@
-# deep-learning-physics
+# Dynamical system modelling using neural networks
