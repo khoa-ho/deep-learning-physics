@@ -36,3 +36,12 @@
 - The prediction tends to follow the data to closely, including all the small fluctuation of noise. Ideally, we want the network to learn the general function that describes the data as opposed to 'memorizing' the data.
 
 ### 03-07-2018
+#### Added
+- Made the period much more complex. The network is still able to capture the data well.
+
+#### Changed
+- Drastically reduced the complexity of the model (from 3 layers to 1, from 300 LSTM units to 10). Apparently, this makes the prediction look much more like a pure function (less noisy). So since the function behind the simulated data is simple, a simple neural network is better at capturing that. A more complex network will just follow the noise more closely, which is undesirable for our purpose.
+
+#### To try
+- 2-dimensional data, non linear data
+- Experimental data from Chad's mass-on-spring system
