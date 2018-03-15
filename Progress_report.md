@@ -1,5 +1,8 @@
 # Progress Report
 
+[//]: # (Image References)
+
+[image0]: ./image/mass-spring1.png "Mass-on-spring"
 
 ### 02-21-2018
 - Learned about the deployment options for Jupyter Notebooks at scale on XSEDE resources. [Webinar](https://www.youtube.com/watch?v=BE6tRuJtq8c "ECSS Symposium December 19 2017")
@@ -51,6 +54,7 @@
 #### Added
 - Replaced simulated data with experimental mass-spring data
     - The network seems to capture the experimental data very well
+    ![alt text][image0]
 - Moving-average function to smooth data if necessary
 
 #### To do
