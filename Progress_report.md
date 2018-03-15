@@ -19,7 +19,6 @@
 
 
 ### 03-05-2018
-
 #### Added
 - The function is now the product of two sine waves with different period. This mimics the period doubling of nonlinear dynamical system.
 - The model now employs Bidirectional LSTM architecture that has been shown to be more effective at learning sequential data (specifically natural language sentences)
@@ -35,6 +34,7 @@
 #### Known issues
 - The prediction tends to follow the data to closely, including all the small fluctuation of noise. Ideally, we want the network to learn the general function that describes the data as opposed to 'memorizing' the data.
 
+
 ### 03-07-2018
 #### Added
 - Made the period much more complex. The network is still able to capture the data well.
@@ -45,3 +45,14 @@
 #### To try
 - 2-dimensional data, non linear data
 - Experimental data from Chad's mass-on-spring system
+
+
+### 03-07-2018
+#### Added
+- Replaced simulated data with experimental mass-spring data
+    - The network seems to capture the experimental data very well
+- Moving-average function to smooth data if necessary
+
+#### To do
+- change the generator function from capturing/partial predicting to complete predicting
+- 2-dimensional data, non linear data
