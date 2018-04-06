@@ -50,7 +50,7 @@
 - Experimental data from Chad's mass-on-spring system
 
 
-### 03-07-2018
+### 03-10-2018
 #### Added
 - Replaced simulated data with experimental mass-spring data
     - The network seems to capture the experimental data very well
