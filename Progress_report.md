@@ -7,6 +7,9 @@
 [image2]: ./image/lorentz_attractor.png "Lorenz attractor"
 [image3]: ./image/lorentz_z_test.png "Prediction of Lorentz z-axis"
 [image4]: ./image/double_pendulum1.png "Double pendulum during 'regular' chaos"
+[image5]: ./image/dp_data2.png "Plot of angles vs. time"
+[image6]: ./image/dp_phase2.png "Phase diagram"
+[image7]: ./image/dp2.png "Single split"
 
 ### 02-21-2018
 - Learned about the deployment options for Jupyter Notebooks at scale on XSEDE resources. [Webinar](https://www.youtube.com/watch?v=BE6tRuJtq8c "ECSS Symposium December 19 2017")
@@ -89,6 +92,17 @@
 
 ### 04-25-2018
 #### Added
-- Tested the network on simulated double pendulum data (both dimensions)
+- Tested the network on simulated double pendulum data (both dimensions). The starting angle is Pi/2 for both arms.
 - The network's prediction was decent for the 'regular' chaos regime where one of the arm doesn't spin too many rounds in-place.
 ![alt text][image4]
+
+
+### 04-26-2018
+#### Changed
+- Tested the network on a different chaos regime
+    - The angle vs. time plot
+![alt text][image5]
+    - The phase diagram
+![alt text][image6]
+    - The testing result
+![alt text][image7]
