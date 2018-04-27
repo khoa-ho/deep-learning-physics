@@ -3,6 +3,9 @@
 [//]: # (Image References)
 
 [image0]: ./image/mass-spring1.png "Mass-on-spring"
+[image1]: ./image/generic_sine_training.png "Visualization of training data for generic sine"
+[image2]: ./image/lorentz_attractor.png "Lorenz attractor"
+[image3]: ./image/lorentz_z_test.png "Prediction of Lorentz z-axis"
 
 ### 02-21-2018
 - Learned about the deployment options for Jupyter Notebooks at scale on XSEDE resources. [Webinar](https://www.youtube.com/watch?v=BE6tRuJtq8c "ECSS Symposium December 19 2017")
@@ -60,3 +63,24 @@
 #### To do
 - change the generator function from capturing/partial predicting to complete predicting
 - 2-dimensional data, non linear data
+
+
+### 04-06-2018
+#### Changed
+- Reducing the number of neurons in the LSTM layer. It turned out that 5 was the smallest number of neurons that allowed the network to generalize without compromising the accuracy.
+
+
+### 04-11-2018
+#### Added
+- Implemented the preprocessing steps and network architecture to perform prediction on generic sinusoidal waves with the same amplitude but varying period. More specifically, during the training step, the network was exposed to the time series of waveforms of different frequencies. Its predictive capability was then tested using a new waveform with unfamiliar (i.e. the network wasn't trained on) period.
+- Following is the visualization of the training dataset
+![alt text][image1]
+
+
+### 04-18-2018
+#### Added
+- Tested the network on the Lorentz system (one dimension at a time)
+- 3D plot of the Lorentz system
+![alt text][image2]
+- The network demonstrated its ability to predict effectively the each dimension of the Lorentz system. Following is the result on the test dataset of z-axis.
+![alt text][image3]
