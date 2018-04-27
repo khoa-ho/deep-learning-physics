@@ -6,6 +6,7 @@
 [image1]: ./image/generic_sine_training.png "Visualization of training data for generic sine"
 [image2]: ./image/lorentz_attractor.png "Lorenz attractor"
 [image3]: ./image/lorentz_z_test.png "Prediction of Lorentz z-axis"
+[image4]: ./image/double_pendulum1.png "Double pendulum during 'regular' chaos"
 
 ### 02-21-2018
 - Learned about the deployment options for Jupyter Notebooks at scale on XSEDE resources. [Webinar](https://www.youtube.com/watch?v=BE6tRuJtq8c "ECSS Symposium December 19 2017")
@@ -84,3 +85,10 @@
 ![alt text][image2]
 - The network demonstrated its ability to predict effectively the each dimension of the Lorentz system. Following is the result on the test dataset of z-axis.
 ![alt text][image3]
+
+
+### 04-25-2018
+#### Added
+- Tested the network on simulated double pendulum data (both dimensions)
+- The network's prediction was decent for the 'regular' chaos regime where one of the arm doesn't spin too many rounds in-place.
+![alt text][image4]
